@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <noscript>Your browser does not support script</noscript>
+        <!-- ================================================== Header =============================================== -->
+        <header>
+            <div class="header">
+                <div class="hleft">
+                    L<label>and</label>
+                </div>
+                <div class="hright" >
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li>Fina a Propety</li>
+                        <li class="page">Pages <i class="fa-solid fa-angle-down"></i>
+                        <div class="pages">
+                            About Us<br/>
+                            Serivices<br/>
+                            Gallery<br/>
+                        </div>
+                        </li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                        <li>Login</li>
+                        <li>Register</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ================================================== Register ============================================== -->
+    <div class="register">
+        <div>
+            <span>Register now</span>
+            <form method="post" action="#" name="form1" id="register" onsubmit="return register()">
+                <label for="Username">Username</label>
+                <input type="text" id="uname" name="uname" placeholder="Username">
+                <p id="p1"></p>
+                <label for="contactnumber">Contact Number</label>
+                <input type="text" name="cono" placeholder="Contact Number" maxlength="10">
+                <p id="p2"></p>
+                <label for="Email">Email</label>
+                <input type="email" name="mail" placeholder="xyz@gmail.com">
+                <p id="p3"></p>
+                <label for="Password">Password</label>
+                <input type="password" name="pass" placeholder="Password">
+                <p id="p4"></p>
+                <label for="Cinfirm password">Confirm Password</label>
+                <input type="password" name="repass" placeholder="Confirm Password">
+                <p id="p5"></p>
+                <div class="checkbox" >
+                    <input type="checkbox" onclick="showpass()">&nbsp;&nbsp;Show password
+                    <br>
+                    <input type="checkbox" name="check" onclick="return accept()">&nbsp;&nbsp;I Accept to the Terms & Conditions
+                    <p id="p6"></p>
+                </div>
+                <input type="submit" value="REGISTER" >
+            </form>
+        </div>
+
+    </div>
+        <!-- =============================================== Footer ========================================= -->
+        <footer>
+            <div class="fbox">
+            <div class="fbox1">
+                <h1>Home</h1>
+                <ul>
+                    <li>Index</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Gallery</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="fbox2">
+                <h1>Company</h1>
+                <ul>
+                    <li>Find a Property</li>
+                    <li>Our Blog</li>
+                    <li>Popular Places</li>
+                </ul>
+            </div>
+            <div class="fbox3">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>+01(24) 8543 8088</li>
+                    <li>Oinfo@example.com</li>
+                </ul>
+            </div>
+            <div class="fbox4">
+                <ul>
+                <li>Statistical Facts</li>
+                <li>Find a Property</li>
+                <li>Testimonials</li>
+                <li>Apps</li>
+                </ul>
+            </div>
+            <div class="fbox5">
+                <h2>Land</h2>
+            </div>
+            </div>
+            <div class="arr">
+                
+                © 2019 Land. All Rights Reserved
+                <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-basketball"></i>
+                
+            </div>
+        </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Bxslider  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    $(document).ready(function(){
+        $(".slider").bxSlider({
+            cantrols:"ture",
+            speed:800,
+            startSlide:"1",
+            pause:"2000",
+            auto:"true",
+            speed:"1000",
+        });
+    })
+</script>
+<!-- <link href="javascript.js"> -->
+</head>
+<body>
+    <!-- ================================================== Header =============================================== -->
+    <header>
+        <div class="header">
+            <div class="hleft">
+                L<label>and</label>
+            </div>
+            <div class="hright" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Fina a Propety</li>
+                    <li class="page">Pages <i class="fa-solid fa-angle-down"></i>
+                    <div class="pages">
+                        About Us<br/>
+                        Serivices<br/>
+                        Gallery<br/>
+                    </div>
+                    </li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                    <li>Login</li>
+                     <a href="register.html" ><li>Register</li></a>
+                     
+                </ul>
+                <button class="menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- ================================================== Landing ===================================================  -->
+    <div class="main">
+            <div class="main landing ">
+            <h1>Search and Find Your <mark>Luxury</mark><br/>Homes</h1>
+            <p>Property for sale & for rent around the world</p>
+            <form id="form1" action="#">
+                <select>
+                    <option value="any type">Any Status</option>
+                    <option value="for rent">For Rent</option>
+                    <option value="for sale">For sale</option>
+                </select>
+                <select>
+                    <option value="Bedrooms">Bedrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select>
+                    <option value="Location">Location</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Vadodra">Vadodra</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Rajkot">Rajkot</option>
+                </select>
+                <select>
+                    <option value="all type" >All Type</option>
+                    <option value="apartments" >Apartments</option>
+                    <option value="row house" >Row House</option>
+                    <option value="villa" >Villa</option>
+                    <option value="shop" >shop</option>
+                </select>
+            </form>
+            <button>Find Here</button>
+        </div>
+    <div class="slider" style="position: absolute;
+    z-index: index 0; ">
+        <div style="background-image:url(image/img10.jpg); height: 85vh; width:100%;"></div>
+        <div style="background-image:url(image/img9.jpg); height: 85vh; width:100%;"></div>
+        <div style="background-image:url(image/img11.jpg); height: 85vh; width:100%;"></div>
+        <div style="background-image:url(image/img1.jpg); height: 85vh; width:100%;"></div>
+    </div>
+</div>
+    <!-- ================================================== Welcome =================================================== -->
+    <div class="section" style="margin:0 auto">
+        <h1 class="welcome-landsite">Welcome To Our <mark>Land Site</mark></h1>
+        <div class="welcome">
+            <div class="wleft">
+                <img src="image/img2.jpg" alt="">
+            </div>
+            <div class="wright">
+                <p>The best place to find the
+                    <br/>
+                house you want.</p>
+                <div>Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci. Nulla accumsan ac elit in congue. Class aptent taciti sociosqu ad litora torquent per conubia.</div>
+                <br/>
+                <div>Donec consequat sapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci. Nulla accumsan ac elit in congue. Class aptent taciti sociosqu ad litora torquent per.</div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================== Services ============================================== -->
+    <div class="section">
+    <div class="image1">
+        <div class="services">
+             <h1>We Provide The Best <mark>Services</mark></h1>
+            <p>Excepteur sint occaecat cupidatat</p>
+            <div class="main1">
+            <div class="box1">
+                <i class="fa-solid fa-house-chimney"></i><br>
+                Service 1
+                <br/>
+                <p>Itaque earum rerum hic tenetur asap iente delectus rulla accumsan.</p>
+            </div>
+            <div class="box2">
+                <i class="fa-solid fa-volleyball"></i><br>
+                Service 2<br/>
+                <p>Itaque earum rerum hic tenetur asap iente delectus rulla accumsan.</p>
+            </div>
+            <div class="box3">
+                <i class="fa-solid fa-building-lock"></i><br>
+                Service 3<br/>
+                <p>Itaque earum rerum hic tenetur asap iente delectus rulla accumsan.</p>
+            </div>
+            </div>
+        </div> 
+    </div>
+</div>
+    <!-- ================================================= Populer ======================================== -->
+    <div class="populer">
+        <h1 class="welcome-landsite">Most Popular <mark>Places</mark></h1>
+        <p>Excepteur sint occaecat cupidatat</p>
+        <div class="city">
+            <div class="city1">Surat</div>
+            <div class="city2">Vadodra</div>
+            <div class="city3">Ahemdabad</div>
+            <div class="city4">Rajkot</div>
+        </div>
+
+    </div>
+    <!-- =============================================== Footer ========================================= -->
+    <footer>
+        <div class="fbox">
+        <div class="fbox1">
+            <h1>Home</h1>
+            <ul>
+                <li>Index</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="fbox2">
+            <h1>Company</h1>
+            <ul>
+                <li>Find a Property</li>
+                <li>Our Blog</li>
+                <li>Popular Places</li>
+            </ul>
+        </div>
+        <div class="fbox3">
+            <h1>Contact Us</h1>
+            <ul>
+                <li>+01(24) 8543 8088</li>
+                <li>Oinfo@example.com</li>
+            </ul>
+        </div>
+        <div class="fbox4">
+            <ul>
+            <li>Statistical Facts</li>
+            <li>Find a Property</li>
+            <li>Testimonials</li>
+            <li>Apps</li>
+            </ul>
+        </div>
+        <div class="fbox5">
+            <h2>Land</h2>
+        </div>
+        </div>
+        <div class="arr">
+            
+            © 2019 Land. All Rights Reserved
+            <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-basketball"></i>
+            
+        </div>
+    </footer>
+        
+</body>
+</html>
