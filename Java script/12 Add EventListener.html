@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-1">green</button>
+    <button id="btn-2">Blue</button>
+    <hr>
+    <div id="div1" style="width:200px; height:200px; border:2px solid green; ">hello wold</div>
+    <div id="div2" style="width:200px; height:200px; border:2px solid blue; ">hello wold</div>
+
+
+    <script>
+        let btn1=document.getElementById("btn-1");
+        btn1.addEventListener("click", function(){
+            document.getElementById("div1").innerHTML="<style>#div1{background-color:green;}</style>";
+        })
+        let btn2=document.getElementById("btn-2");
+        btn2.addEventListener("click", function(){
+            document.getElementById("div2").innerHTML="<style>#div2{background-color:blue;}</style>";
+        })
+        
+        btn1
+    </script>
+</body>
+</html>

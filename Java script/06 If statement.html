@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get" name="form1" onsubmit="return checknum()">
+        <label for="">Enter 1<sup>st</sup> number</label>
+        <input type="text" id="num1">
+        <br>
+        <br>
+        <label for="" i>Enter 2<sup>st</sup> number</label>
+        <input type="text" id="num2">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+    <script>
+        function checknum(){
+            var num1=document.getElementById("num1").value;
+            var num2=document.getElementById("num2").value;
+
+            document.getElementById("p1").innerHTML="First number is " + num1;
+            document.getElementById("p2").innerHTML="Second number is " + num2;
+
+            if (num1<num2){
+            document.getElementById("p3").innerHTML="Number 2 is big.";
+            } else if(num2<num1){
+            document.getElementById("p3").innerHTML="Number 1 is big.";
+            } else {
+            document.getElementById("p3").innerHTML="Both number are same";
+            }
+            
+        }
+    </script>
+</body>
+</html>
