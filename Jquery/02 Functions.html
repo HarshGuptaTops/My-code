@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">show</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+    <div id="box-1" style="width:200px; height:200px; background-color:blueviolet"></div>
+    <br>
+    <script>
+        $(document).ready (function(){
+            $("#hide").click(function(){
+                $("#box-1").hide(1000);
+            })
+            $("#show").click(function(){
+                $("#box-1").show(500);
+            })
+            $("#toggle").click(function(){
+                $("#box-1").toggle(100);
+            })
+        })
+    </script>
+    <hr>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+    <button id="fadeto">Fade To</button>
+    <br><br>
+    <div id="box-2" style="width:200px; height:200px; background-color:blueviolet"></div>
+    <br>
+    <script>
+        $(document).ready (function(){
+            $("#fadeout").click(function(){
+                $("#box-2").fadeOut();
+            })
+            $("#fadein").click(function(){
+                $("#box-2").fadeIn();
+            })
+            $("#fadetoggle").click(function(){
+                $("#box-2").fadeToggle(100);
+            })
+            $("#fadeto").click(function(){
+                $("#box-2").fadeTo(100,0.5);
+            })
+        })
+    </script>
+    <hr>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="slidetoggle">Slide Toggle</button>
+    <br><br>
+    <div id="box-3" style="width:200px; height:200px; background-color:blueviolet"></div>
+    <br>
+    <script>
+        $(document).ready (function(){
+            $("#slideup").click(function(){
+                $("#box-3").slideUp(1000);
+            })
+            $("#slidedown").click(function(){
+                $("#box-3").slideDown(1000);
+            })           
+            $("#slidetoggle").click(function(){
+                $("#box-3").slideToggle(1000);
+            })
+        })
+    </script>
+
+</body>
+</html>
